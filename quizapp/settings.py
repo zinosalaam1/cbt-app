@@ -30,7 +30,7 @@ SECRET_KEY = environ.get('SECRET_KEY','django-insecure-((8ig+(f!i%-9xhzcme^_-(+e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['quizapp-hjuz.onrender.com']
 
 
 # Application definition
