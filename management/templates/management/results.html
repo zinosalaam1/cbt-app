@@ -19,7 +19,7 @@
     </tr>
   </thead>
   <tbody>
-    {% comment %} {% for result in results %} {% endcomment %}
+    {% for result in results %}
     <tr>
       <th scope="row">{{ forloop.counter }}</th>
       <td>{{ result.id }}</td>
@@ -28,7 +28,7 @@
       <td>{{ result.got }}</td>
       <td>{{ result.got }}/{{ result.total }}</td>
     </tr>
-    {% comment %} {% endfor %} {% endcomment %}
+    {% endfor %}
   </tbody>
 </table>
 </div>

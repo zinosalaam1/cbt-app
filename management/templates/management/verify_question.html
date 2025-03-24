@@ -34,7 +34,7 @@
       </tr>
     </thead>
     <tbody>
-    {% comment %} {% for q in questions %} {% endcomment %}
+    {% for q in questions %}
     <tr>
       <th scope="row">
         <div class="form-check">
@@ -49,7 +49,7 @@
       <th>{{ q.correct_option }}</th>
       <th>{{ q.creator.username }}</th>
     </tr>
-    {% comment %} {% endfor %} {% endcomment %}
+    {% endfor %}
     </tbody>
   </table>
     <br>
