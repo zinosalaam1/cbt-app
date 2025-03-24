@@ -13,5 +13,5 @@ python manage.py migrate
 
 if [[ $CREATE_SUPERUSER ]];
 then
-  python quizappdb/manage.py createsuperuser --no-input
+  python cbt-app/manage.py createsuperuser --no-input
 fi
