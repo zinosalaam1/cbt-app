@@ -132,10 +132,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-DEBUG = True
-if not DEBUG:   
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+DEBUG = True 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = [
     BASE_DIR / "static"   
 ]
